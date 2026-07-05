@@ -11,8 +11,8 @@
 ## 🎯 Problem Statement
 
 As a 3rd year CSE-AI student from Kanpur actively
-applying for AI internships, I struggled with:
-- Finding relevant AI internships on Internshala
+applying for AI internships on Internshala, I struggled with:
+- Finding relevant AI/ML internships automatically
 - Getting resume ATS optimized for top companies
 - Preparing for technical interviews
 - Building a proper learning roadmap
@@ -26,24 +26,15 @@ So I built the solution myself!
 
 | Agent | What It Does |
 |-------|-------------|
-| Resume ATS Scorer | Scores resume out of 100 with detailed feedback |
+| Resume ATS Scorer | Scores resume out of 100 with feedback |
 | Internship Finder | Finds top AI/ML internships |
 | Interview Simulator | Asks real technical interview questions |
-| Career Roadmap Builder | 8-month AI Engineer learning roadmap |
+| Career Roadmap Builder | 8-month AI Engineer roadmap |
 | LinkedIn Optimizer | Complete profile optimization guide |
 
 ---
 
 ## 🏗️ Architecture
-
-User Input
-    ↓
-Orchestrator Agent (Google ADK 2.0)
-    ↓
-5 Specialized Career Tools
-    ↓
-Personalized Career Action Plan
-
 ---
 
 ## 🛠️ Tech Stack
@@ -62,56 +53,65 @@ Personalized Career Action Plan
 ### Prerequisites
 - Python 3.11+
 - uv package manager
-- Groq API key — free at console.groq.com
+- Groq API key from console.groq.com (free!)
 
 ### Setup
 
-Clone the repo
+```bash
+# Clone the repo
 git clone https://github.com/DivyanshiBajpai2007/ai-career-navigator.git
 cd ai-career-navigator
 
-Install dependencies
+# Install dependencies
 agents-cli install
 
-Set API keys on Windows
-set GROQ_API_KEY=your_groq_key_here
+# Set API keys on Windows
+set GROQ_API_KEY=paste your_groq_key_here
+This tells users to set THEIR OWN key! ✅
 set GOOGLE_GENAI_USE_VERTEXAI=0
 
-Run the agent
+# Run the agent
 uv run adk web app
 
-Open browser at http://127.0.0.1:8000
+# Open browser at
+http://127.0.0.1:8000
+```
 
 ---
 
 ## 💬 Example Conversations
 
-Resume Scoring:
+**Resume Scoring:**
+**Resume Scoring:**
 You: Score my resume: Python developer,
-     3 AI projects, GitHub profile,
-     interning at Venura Tech
+3 AI projects, GitHub profile,
+interning at Venura Tech
 Agent: Resume ATS Score: 90/100
-       Excellent! Your resume is ATS ready!
+Excellent! Your resume is ATS ready!
 
-Finding Internships:
+**Finding Internships:**
 You: Find me AI internships
-Agent: Top AI/ML Internships:
-       1. Generative AI Intern at Google India
-          Stipend: 25000/month, Remote
-       2. ML Engineer Intern at Microsoft India
-          Stipend: 20000/month, Hybrid
+Agent: 1. Generative AI Intern at Google India
+Stipend: 25000/month, Remote
+2. ML Engineer Intern at Microsoft India
+Stipend: 20000/month, Hybrid
 
-Interview Practice:
+**Interview Practice:**
 You: Ask me an interview question on AI
 Agent: Q: What is the difference between
-          AI, ML and Deep Learning?
-       Tips: Start with clear definition...
+AI, ML and Deep Learning?
+Tips: Start with clear definition...
 
-Career Roadmap:
-You: Give me career roadmap to become AI Engineer
+**Career Roadmap:**
+You: Give me career roadmap
 Agent: Phase 1 Foundation Month 1-2:
-       Master Python via Kaggle
-       Learn Git and GitHub basics...
+Master Python via Kaggle...
+
+**LinkedIn Tips:**
+You: How to optimize my LinkedIn?
+Agent: Headline Options:
+AI Engineer in Making | Python |
+LLMs | Google ADK | Open to Internships
 
 ---
 
@@ -128,7 +128,7 @@ Agent: Phase 1 Foundation Month 1-2:
 
 ## 👩‍💻 About The Builder
 
-Divyanshi Bajpai
+**Divyanshi Bajpai**
 3rd Year CSE-AI Student
 Maharana Pratap Engineering College, Kanpur
 Interning at Venura Tech as AI Engineer Intern
