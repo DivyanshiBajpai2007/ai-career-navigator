@@ -97,6 +97,11 @@ def get_interview_question() -> str:
         "What is transfer learning and when would you use it?",
         "What is Docker and why is it important for AI deployment?",
         "Explain what a vector database is and its use in AI.",
+        "What is LangChain and how does it work?",
+        "Explain what a vector database is.",
+        "What is the difference between RAG and fine-tuning?",
+        "What is MLOps and why is it important?",
+        "Explain what FastAPI is and when to use it.",
     ]
     question = random.choice(questions)
     result = "Technical Interview Question:\n\n"
