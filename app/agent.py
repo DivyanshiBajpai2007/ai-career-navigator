@@ -1,3 +1,11 @@
+
+# CareerCraft AI v1.0
+# Smart Career Agent for Indian CSE Students
+# Built by Divyanshi Bajpai for Google & Kaggle 
+# 5-Day AI Agents Intensive Vibe Coding Course 2026
+# Track: Concierge Agents
+# GitHub: github.com/DivyanshiBajpai2007/ai-career-navigator
+
 import os
 import random
 from google.adk.agents import Agent
