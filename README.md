@@ -41,7 +41,7 @@ So I built the solution myself!
 
 - Google Agent Development Kit (ADK) 2.0
 - Google Agents CLI 0.5.0
-- Groq API with meta-llama/llama-4-scout-17b
+- Groq API with qwen/qwen3.8-27b (migrated from Llama 4 Scout after Groq retired it)
 - Python 3.13
 - LiteLLM
 - uv package manager

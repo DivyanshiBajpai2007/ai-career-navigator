@@ -179,7 +179,7 @@ def get_linkedin_tips() -> str:
 
 root_agent = Agent(
     name="career_craft_ai",
-    model=LiteLlm(model="groq/meta-llama/llama-4-scout-17b-16e-instruct"),
+    model=LiteLlm(model="groq/qwen/qwen3.8-27b"),
     instruction="""You are CareerCraft AI, a friendly and 
     encouraging career navigation assistant specifically 
     built for Indian CSE students who want to become 
